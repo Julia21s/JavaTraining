@@ -50,4 +50,16 @@ public class Person {
                 ", age=" + age +
                 '}';
     }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getSecondName() {
+        return secondName;
+    }
+
+    public int getAge() {
+        return age;
+    }
 }

@@ -7,6 +7,7 @@ public class PersonWithGender {
     int age;
     Gender gender;
 
+
     public PersonWithGender(String firstName, String secondName, int age, Gender gender) {
         this.firstName = firstName;
         this.secondName = secondName;
@@ -20,6 +21,7 @@ public class PersonWithGender {
                 15,
                 Gender.MALE);
         System.out.println(p1);
+        System.out.println(p1.getFirstName());
     }
 
     @Override
@@ -49,8 +51,24 @@ public class PersonWithGender {
         return "PersonWithGender{" +
                 "firstName='" + firstName + '\'' +
                 ", secondName='" + secondName + '\'' +
-                ", age=" + age +
-                ", gender=" + gender +
+                ", age=" + this.age +
+                ", gender=" + this.gender +
                 '}';
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getSecondName() {
+        return secondName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public Gender getGender() {
+        return gender;
     }
 }
